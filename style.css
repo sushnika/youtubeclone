@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto","Arial",sans-serif
+}
+.mt-30{
+    margin-top: 30px;
+}
+body{
+    background-color: rgb(34,34,34);
+}
+img{
+    cursor: pointer;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+nav{
+    /* border-bottom: 2px solid #000; */
+    padding: 10px 20px;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: sticky;
+    top:0;
+    background-color: rgb(34,34,34);
+}
+.nav-right img{
+    width: 25px;
+    margin-right: 20px;
+}
+.nav-right img:not(:last-child),
+.hamburger-menu,
+.yt-logo
+{
+  filter: invert(1);
+}
+
+.nav-left img{
+    width: 25px;
+}
+
+.nav-left .yt-logo{
+    width: 75px;
+    margin-left: 20px;
+}
+
+.nav-right .profile-pic{
+    border-radius: 50%;
+}
+.nav-middle{
+    width: 50%;
+}
+.search-box{
+    width:90%;
+    border-radius: 50px;
+    justify-content: space-evenly;
+    border: 1px solid grey;
+}
+.mic-icon, .search-icon{
+    width: 25px;
+    height: 25px;
+}
+.search-icon {
+    filter: invert(1);
+}
+.search-box input{
+    width: 94%;
+    padding: 0.7rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #fff
+}
+    /* .search-icon{
+        background-color: rgb(72,72,72);
+        border-radius: 0 10px 10px 0;
+        justify-content: center;
+        width:17%;
+    } */
+.search-div{
+    width:17%;
+    background-color: rgb(72,72,72);
+    border-radius: 0 50px 50px 0;
+    justify-content: center;
+    padding: 10px
+}
+.mic-div{
+   border-radius: 50%;
+   justify-content: center;
+}
+
+.mic-div img{
+    border-radius: 50%;
+    width:30px;
+    height:30px;
+    margin-left:20px;
+}
+
+/* sidebar */
+a {
+    text-decoration: none;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+.sidebar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.sidebar img{
+    filter: invert();
+}
+.sidebar a{
+    margin-left: 10px;
+    padding:10px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+}
+.sidebar img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+} 
+.smaller-sidebar a span{
+    display: none;
+}
+.sidebar-upper a span:first-child, .sidebar a:hover{
+    background-color: #2e2e2e;
+} 
+
+.main-container{
+    margin-left: 17%;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.expand-container{
+    margin-left: 5%;;
+}
+.card{
+    width: 350px;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+.expand-card{
+    width: 400px;
+}
+.thumbnail-img{
+    width: 100%;
+}
+.user-img{
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 40px;
+}
+.video-container{
+    padding: 0 20px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.video-container .content-left{
+    flex-basis: 75%;
+    padding-right: 20px;
+}
+.video-container .content-left video{
+    width: 100%;
+    border-radius: 10px;
+}
+.video-container .content-right{
+    flex-basis: 30%;
+}
+.video-container .content-right img{
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top:10px;
+}
+.name-subscribers{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.other-details {
+    margin-top: 20px;
+}
+.flex-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.other-details-right img{
+    width: 40px;
+}
+.channel-name img, .channel-icon {
+    border-radius: 50%;
+    width: 50px;
+}
+.join-subscribe-section button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+.bg-black-btn{
+    background-color: #2e2e2e;
+    color: #fff;;
+}
+.description-container{
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.commnet-container{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.write-comment-container{
+    display: flex;
+    align-items: center;
+}
+.write-comment-container input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid grey;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+}
+.name-comment{
+    padding-left: 20px;
+}
+.name-comment {
+    font-size: 14px;
+}
+@media only screen and (max-width: 768px){
+    .sidebar span, .mic-icon, .search-icon{
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width:991px){
+    .content {
+        flex-direction: column !important;
+    }
+    .card {
+        flex-basis: 48% !important;
+    }
+}
